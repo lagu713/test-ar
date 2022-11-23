@@ -11,11 +11,11 @@
 
   <body>
     <a-scene
-        vr-mode-ui="enabled: false"
-        arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false;'
-        renderer='antialias: true; alpha: true'>
-            <a-camera gps-projected-camera rotation-reader simulateLatitude simulateLongitude></a-camera>
-            <a-box gps-projected-entity-place='latitude: 29.803090845476223; longitude: -95.41569450396072;' material='color: red' scale='50 50 50'></a-box>
+      vr-mode-ui="enabled: false"
+      arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false;"
+    >
+      <a-box material="color: yellow" gps-entity-place="latitude: 29.803090845476223; longitude: -95.41569450396072;" position="30 30 30"/>
+      <a-camera gps-camera rotation-reader simulateLatitude simulateLongitude> </a-camera>
     </a-scene>
   </body>
 </html>
