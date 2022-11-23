@@ -14,12 +14,7 @@
       vr-mode-ui="enabled: false"
       arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false;"
     >
-      <a-text
-        value="Pingin!"
-        look-at="[gps-camera]"
-        scale="120 120 120"
-        gps-entity-place="latitude: 30.8030351; longitude: -95.4179734,17;"
-      ></a-text>
+    <a-box color="yellow" gps-projected-entity-place="latitude: 29.8030351; longitude: -95.4179734,17;" position="0 30 0"/>
       <a-camera gps-camera rotation-reader> </a-camera>
     </a-scene>
   </body>
